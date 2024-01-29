@@ -3,6 +3,8 @@ import Logo from '@/components/Logo.vue'
 import Button from '@/components/Button.vue'
 import { Icon } from '@iconify/vue'
 import { sidebarState } from '@/composables'
+import logo from '@/assets/images/DSWD-Logo.png'
+
 </script>
 
 <template>
@@ -11,8 +13,12 @@ import { sidebarState } from '@/composables'
             :to="{ name: 'Dashboard' }"
             class="inline-flex items-center gap-2"
         >
-            <span class="sr-only">K-UI</span>
-            <Logo aria-hidden="true" class="w-10 h-auto" />
+            <img class="object-contain h-12"
+                :src="logo"
+                alt="DSWD Logo"
+            />
+            <!-- <span class="sr-only">K-UI</span>
+            <Logo aria-hidden="true" class="w-10 h-auto" /> -->
         </router-link>
 
         <Button
