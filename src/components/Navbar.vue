@@ -14,6 +14,7 @@ import Logo from '@/components/Logo.vue'
 import Dropdown from '@/components/Dropdown.vue'
 import DropdownLink from '@/components/DropdownLink.vue'
 import userAvatar from '@/assets/images/avatar.jpg'
+import logo from '@/assets/images/DSWD-Logo.png'
 
 const { isFullscreen, toggle: toggleFullScreen } = useFullscreen()
 
@@ -114,8 +115,10 @@ onUnmounted(() => {
         <Button icon="mdi:magnify" iconOnly variant="secondary" srText="Search" />
 
         <router-link :to="{ name: 'Dashboard' }">
-            <Logo class="w-10 h-10" />
-            <span class="sr-only">K UI</span>
+            <img class="object-contain h-12"
+                :src="logo"
+                alt="DSWD Logo"
+            />
         </router-link>
 
         <Button
