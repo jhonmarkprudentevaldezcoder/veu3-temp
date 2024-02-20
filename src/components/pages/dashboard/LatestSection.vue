@@ -9,8 +9,8 @@ import { Icon } from '@iconify/vue'
         <h2 class="sr-only">Latest users</h2>
 
         <!-- Latest users -->
-        <BaseCard title="Latest Users" :actions="[{ title: 'View', to: '#' }]">
-            <!-- Table -->
+        <BaseCard title="DSWD" :actions="[{ title: 'View', to: '#' }]">
+            
         </BaseCard>
 
         <!-- Recent cards -->

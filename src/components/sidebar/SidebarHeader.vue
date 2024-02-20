@@ -13,12 +13,12 @@ import logo from '@/assets/images/DSWD-Logo.png'
             :to="{ name: 'Dashboard' }"
             class="inline-flex items-center gap-2"
         >
-            <img class="object-contain h-12"
+           <!--  <img class="object-contain h-12"
                 :src="logo"
                 alt="DSWD Logo"
-            />
-            <!-- <span class="sr-only">K-UI</span>
-            <Logo aria-hidden="true" class="w-10 h-auto" /> -->
+            /> -->
+            <span class="sr-only">K-UI</span>
+            <Logo aria-hidden="true" class="w-10 h-auto" />
         </router-link>
 
         <Button

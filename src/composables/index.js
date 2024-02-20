@@ -30,7 +30,7 @@ export const scrolling = reactive({
 let lastScrollTop = 0
 
 export const handleScroll = () => {
-  let st = window.pageYOffset || document.documentElement.scrollTop
+  let st = sdocument.documentElement.scrollTop
   if (st > lastScrollTop) {
     // downscroll
     scrolling.down = true

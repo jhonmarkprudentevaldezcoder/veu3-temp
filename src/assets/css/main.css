@@ -8,7 +8,7 @@
   }
 
   #nprogress .bar {
-    @apply bg-purple-600;
+    @apply bg-yellow-900;
 
     position: fixed;
     z-index: 1031;
@@ -19,6 +19,10 @@
     height: 3px;
   }
 }
+
+/* div{
+  border: 1px solid red;
+} */
 
 .apexcharts-canvas {
   background: transparent !important;

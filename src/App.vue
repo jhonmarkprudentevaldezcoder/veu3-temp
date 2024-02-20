@@ -1,17 +1,17 @@
-<script setup>
+<!-- <script setup>
 import { onMounted } from 'vue'
 import { gsap } from 'gsap'
 
 onMounted(() => {
-    gsap.to('#loading .logo', { y: -50, opacity: 0, duration: 0.5 })
+    gsap.to('#loading .logo', { y: 0, opacity: 0, duration: 0.5 })
     gsap.to('#loading .left', {
-        rotateY: 45,
+        rotateY: 0,
         x: '-130%',
         duration: 1,
         delay: 0.6,
     })
     gsap.to('#loading .right', {
-        rotateY: -45,
+        rotateY: 0,
         x: '130%',
         duration: 1,
         delay: 0.6,
@@ -20,7 +20,7 @@ onMounted(() => {
         },
     })
 })
-</script>
+</script> -->
 
 <template>
     <router-view />
