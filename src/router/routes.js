@@ -15,6 +15,7 @@ export default [
       },
     ],
   },
+ 
   {
     path: '/auth',
     name: 'Auth',

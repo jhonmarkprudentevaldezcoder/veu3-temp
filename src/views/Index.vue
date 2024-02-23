@@ -12,15 +12,14 @@ import Button from '@/components/Button.vue'
             <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                 <h2 class="text-xl font-semibold leading-tight">Dashboard</h2>
 
-                <!-- <Button
-                    target="_blank"
-                    href="https://github.com/kamona-ui/kui-dashboard-vue"
+                <Button
+                    href="/"
                     variant="black"
                     class="justify-center max-w-sm gap-2"
-                    left-icon="mdi:github"
+                    left-icon="solar:align-left-bold-duotone"
                 >
-                    <span>Star on Github</span>
-                </Button> -->
+                    <span>DSWD</span>
+                </Button>
             </div>
         </template>
 
@@ -28,7 +27,7 @@ import Button from '@/components/Button.vue'
         <StatisticsSection />
 
         <!-- Sales section -->
-          <!-- <SalesSection /> -->
+          <SalesSection />
 
         <!-- Latest users & transaction section -->
         <LatestSection />

@@ -17,5 +17,5 @@ export default defineConfig({
     exclude: ['.out'],
   },
 
-  base: '/kui-dashboard-vue/',
+  base: '/dswd/',
 })

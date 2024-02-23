@@ -39,7 +39,8 @@ const isCurrentPath = (path) => {
             />
         </SidebarCollapsible>
 
-        <SidebarCollapsible icon="mdi:shield-star-outline" title="Authentication">
+        <SidebarCollapsible 
+            :active="isCurrentRoute('Dashboard')" icon="mdi:shield-star-outline" title="Authentication">
             <SidebarCollapsibleItem :to="{ name: 'Login' }" title="Login" />
             <SidebarCollapsibleItem
                 :to="{ name: 'Register' }"
@@ -62,5 +63,12 @@ const isCurrentPath = (path) => {
                 title="Confirm Password"
             />
         </SidebarCollapsible>
+
+        <SidebarLink
+            title="Access Level"
+            :to="{ name: 'Dashboard' }"
+            :active="isCurrentRoute('Dashboard')"
+            icon="clarity:administrator-line"
+        />
     </PerfrectScrollbar>
 </template>
