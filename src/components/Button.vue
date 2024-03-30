@@ -91,9 +91,9 @@ const baseClasses = [
 ]
 
 const variantClasses = (variant) => ({
-    'bg-purple-500 text-white hover:bg-purple-600 focus:ring-purple-500':
+    'bg-blue-800 text-white hover:bg-blue-900 focus:ring-blue-900':
         variant == 'primary',
-    'bg-white text-gray-500 hover:bg-gray-100 focus:ring-purple-500 dark:text-gray-400 dark:bg-dark-eval-1 dark:hover:bg-dark-eval-2 dark:hover:text-gray-200':
+    'bg-white text-gray-500 hover:bg-gray-100 focus:ring-blue-900 dark:text-gray-400 dark:bg-dark-eval-1 dark:hover:bg-dark-eval-2 dark:hover:text-gray-200':
         variant == 'secondary',
     'bg-green-500 text-white hover:bg-green-600 focus:ring-green-500':
         variant == 'success',
@@ -122,7 +122,7 @@ const classes = computed(() => [
           },
     variantClasses(variant),
     {
-        'rounded-md': !squared && !pill,
+        'rounded-sm': !squared && !pill,
         'rounded-full': pill,
     },
     {

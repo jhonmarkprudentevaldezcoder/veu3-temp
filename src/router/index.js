@@ -4,7 +4,7 @@ import routes from '@/router/routes'
 import { sidebarState } from '@/composables'
 
 const router = createRouter({
-  history: createWebHashHistory('kui-dashboard-vude'),
+  history: createWebHashHistory('dswd-dashboard-vude'),
   routes,
 })
 

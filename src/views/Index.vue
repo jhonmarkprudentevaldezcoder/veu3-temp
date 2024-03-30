@@ -14,7 +14,7 @@ import Button from '@/components/Button.vue'
 
                 <Button
                     href="/"
-                    variant="black"
+                    variant="danger"
                     class="justify-center max-w-sm gap-2"
                     left-icon="solar:align-left-bold-duotone"
                 >
@@ -31,5 +31,8 @@ import Button from '@/components/Button.vue'
 
         <!-- Latest users & transaction section -->
         <LatestSection />
+
+      
     </PageWrapper>
+    
 </template>

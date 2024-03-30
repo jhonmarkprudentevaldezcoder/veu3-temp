@@ -1,6 +1,8 @@
 export default [
+
+  /* secured routes */
   {
-    path: '/',
+    path: '/auth',
     component: () => import('@/layouts/DashboardLayout.vue'),
     children: [
       {
@@ -15,7 +17,9 @@ export default [
       },
     ],
   },
- 
+
+
+  /* public routes */
   {
     path: '/auth',
     name: 'Auth',

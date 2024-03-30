@@ -1,3 +1,6 @@
+
+<!-- add loading effect -->
+
 <!-- <script setup>
 import { onMounted } from 'vue'
 import { gsap } from 'gsap'
@@ -21,6 +24,8 @@ onMounted(() => {
     })
 })
 </script> -->
+
+
 
 <template>
     <router-view />

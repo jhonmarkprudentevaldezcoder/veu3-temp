@@ -13,12 +13,13 @@ import logo from '@/assets/images/DSWD-Logo.png'
             :to="{ name: 'Dashboard' }"
             class="inline-flex items-center gap-2"
         >
-           <!--  <img class="object-contain h-12"
+           <!--  <img class="object-contain h-8"
                 :src="logo"
                 alt="DSWD Logo"
             /> -->
-            <span class="sr-only">K-UI</span>
+           
             <Logo aria-hidden="true" class="w-10 h-auto" />
+            <span class="">DSWD</span>
         </router-link>
 
         <Button
@@ -30,14 +31,14 @@ import logo from '@/assets/images/DSWD-Logo.png'
             :sr-text="sidebarState.isOpen ? 'Close sidebar' : 'Open sidebar'"
         >
             <Icon
-                icon="mdi:menu-open"
+                icon="solar:hamburger-menu-broken"
                 aria-hidden="true"
                 v-show="sidebarState.isOpen"
                 :class="['hidden lg:block', iconSizeClasses]"
             />
 
             <Icon
-                icon="mdi:menu-close"
+                icon="solar:hamburger-menu-outline"
                 aria-hidden="true"
                 v-show="!sidebarState.isOpen"
                 :class="['hidden lg:block', iconSizeClasses]"

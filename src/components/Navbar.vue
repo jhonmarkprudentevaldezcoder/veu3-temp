@@ -13,7 +13,7 @@ import Button from '@/components/Button.vue'
 import Logo from '@/components/Logo.vue'
 import Dropdown from '@/components/Dropdown.vue'
 import DropdownLink from '@/components/DropdownLink.vue'
-import userAvatar from '@/assets/images/avatar.jpg'
+import userAvatar from '@/assets/images/DSWD-Logo.png'
 import logo from '@/assets/images/DSWD-Logo.png'
 
 const { isFullscreen, toggle: toggleFullScreen } = useFullscreen()
@@ -28,6 +28,7 @@ onUnmounted(() => {
 </script>
 
 <template>
+       <!-- Desktop view header bar -->
     <nav
         aria-label="secondary"
         :class="[
@@ -82,27 +83,28 @@ onUnmounted(() => {
                 <Icon icon="mdi:arrow-collapse-all" v-show="isFullscreen" aria-hidden="true" :class="iconSizeClasses" />
             </Button>
 
-            <!-- Dropdwon -->
+            <!-- profile image Dropdwon -->
             <Dropdown align="right" width="48">
                 <template #trigger>
                     <button
-                        class="flex text-sm transition border-2 border-transparent rounded-md focus:outline-none focus:ring focus:ring-purple-500 focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark-eval-1"
+                        class="flex text-sm transition border-2 border-transparent rounded-md focus:outline-none focus:ring focus:ring-blue-900 focus:ring-offset-1 focus:ring-offset-white dark:focus:ring-offset-dark-eval-1"
                     >
                         <img
-                            class="object-cover w-8 h-8 rounded-md"
+                            class="object-cover w-6 h-6 rounded-md"
                             :src="userAvatar"
                             alt="User Name"
                         />
                     </button>
                 </template>
                 <template #content>
-                    <DropdownLink to="#">Log Out</DropdownLink>
+                    <DropdownLink to="#">Profile</DropdownLink>
+                    <DropdownLink to="#">Sign Out</DropdownLink>
                 </template>
             </Dropdown>
         </div>
     </nav>
 
-    <!-- Mobile bottom bar -->
+    <!-- Mobile view bottom bar -->
     <div
         :class="[
             'fixed inset-x-0 bottom-0 flex items-center justify-between px-4 py-4 sm:px-6 transition-transform duration-500 bg-white md:hidden dark:bg-dark-eval-1',
@@ -112,10 +114,10 @@ onUnmounted(() => {
             },
         ]"
     >
-        <Button icon="mdi:magnify" iconOnly variant="secondary" srText="Search" />
+        <!-- <Button icon="mdi:magnify" iconOnly variant="secondary" srText="Search" /> -->
 
         <router-link :to="{ name: 'Dashboard' }">
-            <img class="object-contain h-12"
+            <img class="object-contain h-8"
                 :src="logo"
                 alt="DSWD Logo"
             />

@@ -1,13 +1,10 @@
 {
-  "name": "kui-dashboard-vue",
+  "name": "dswd-dashboard-vue",
   "version": "0.1.0",
   "description": "Admin dashboard template built with tailwindcss & vuejs.",
   "license": "MIT",
-  "homepage": "https://github.com/kamona-ui/kui-dashboard-vue",
   "author": {
-    "name": "Kamona UI",
-    "email": "kamonaui@gmail.com",
-    "url": "https://github.com/kamona-ui"
+    "name": "DSWD ui template "
   },
   "scripts": {
     "dev": "vite",
@@ -16,12 +13,17 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@fortawesome/vue-fontawesome": "^3.0.6",
     "@headlessui/vue": "^1.6.5",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
     "@vueuse/core": "^8.9.0",
     "apexcharts": "^3.35.3",
     "gsap": "^3.11.5",
+    "libphonenumber-js": "^1.10.59",
     "nprogress": "^0.2.0",
     "perfect-scrollbar": "^1.5.5",
+    "pinia": "^2.1.7",
     "vue": "^3.2.37",
     "vue-router": "^4.1.1",
     "vue-toastification": "^2.0.0-rc.5"

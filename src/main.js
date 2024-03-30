@@ -1,3 +1,6 @@
+// Dynamically import all modules under the plugins dir
+import.meta.glob('@/plugins/*.js', { eager: true })
+
 import { createApp } from 'vue'
 import router from '@/router'
 import App from '@/App.vue'
